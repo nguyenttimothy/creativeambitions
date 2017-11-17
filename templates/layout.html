@@ -14,7 +14,7 @@
   <body>
     <header>
       <div class="tagline-upper text-center text-heading text-shadow text-white mt-3 d-none d-lg-block">Creative Ambitions</div>
-      <div class="tagline-lower text-center text-expanded text-shadow text-uppercase text-white mb-3 d-none d-lg-block">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
+      <div class="tagline-lower text-center text-expanded text-shadow  text-white mb-3 d-none d-lg-block">7700 Irvine Center Dr., Suite 550 | Irvine, CA 92618 | 714.213.5285</div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-faded py-lg-1">
@@ -26,24 +26,24 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item active px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="{{ url_for('home') }}">Home
+              <a class="nav-link " href="{{ url_for('home') }}">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="{{ url_for('vblog') }}">VBlog</a>
+              <a class="nav-link  " href="{{ url_for('vlog') }}">Vlog</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="{{ url_for('gallery') }}">Gallery</a>
+              <a class="nav-link " href="{{ url_for('gallery') }}">Gallery</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="{{ url_for('contact') }}">Contact</a>
+              <a class="nav-link " href="{{ url_for('contact') }}">Contact</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="{{ url_for('signup') }}">Sign Up</a>
+              <a class="nav-link " href="{{ url_for('signup') }}">Sign Up</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="{{ url_for('login') }}">Login</a>
+              <a class="nav-link " href="{{ url_for('login') }}">Login</a>
             </li>
           </ul>
         </div>
@@ -55,14 +55,14 @@
 
     {% endblock %}
 
-    <footer class="bg-faded text-center py-5">
+    <footer class="bg-faded text-center py-1">
           <div class="container">
             <p class="m-0">Copyright &copy; Creative Ambitions 2017</p>
           </div>
     </footer>
 
         <!-- Bootstrap core JavaScript -->
-        <script  href="{{ url_for('static', filename='js/jquery.min.js') }}> </script>
+        <script  src="static/js/jquery.min.js"> </script>
         <script src="static/js/bootstrap.bundle.min.js"></script>
 
   </body>

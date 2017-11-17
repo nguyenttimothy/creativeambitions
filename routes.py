@@ -1,5 +1,6 @@
 import os
 from flask import Flask, render_template, request, session, redirect, url_for
+from flask.ext.sqlalchemy import SQLAlchemy
 from models import db, User
 from forms import SignupForm, LoginForm, AddressForm
 
@@ -9,13 +10,14 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/CAdatabase'
 db.init_app(app)
 
 app.secret_key = "development-key"
+
 @app.route("/")
 def index():
     return render_template("index.html")
 
-@app.route("/vblog")
-def vblog():
-    return render_template("vblog.html")
+@app.route("/vlog")
+def vlog():
+    return render_template("vlog.html")
 
 @app.route("/gallery")
 def gallery():
